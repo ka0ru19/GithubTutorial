@@ -1,0 +1,45 @@
+【作ったアプリをGithubにリポジトリ登録する】
+
+このTutorialの見方：
+{〜〜〜} ←この部分をまるまる自分のプロジェクト用に置き換えて実行していく
+
+//github に予めリポジトリを登録しておく
+
+//"cd "と入力後、デスクトップのフォルダをターミナルの画面上にドラッグ
+$ cd {自分のプロジェクトファイル}
+$ git config --global user.email {githubに登録したemail-adress}
+$ git init
+$ git add .
+$ git commit -m"first commit"
+$ git remote add origin {リポジトリのURL}
+$ git push origin master
+(時間かかる)
+
+…
+ * [new branch]      master -> master
+
+//ここまで表示されたら完了
+
+
+【同じアプリの二回目以降の更新作業】 
+２回目以降はコードの更新をgitのリポジトリに登録します
+
+$ cd {自分のプロジェクトファイル}
+$ git add .
+$ git commit -m "message change point"
+$ git push origin master 
+
+これで更新完了！
+
+
+【その他のgitコマンド】
+
+git status コミット待ちファイルの表示
+
+git checkout ブランチの切り替え
+
+git push リモートレポジトリコミット
+
+git diﬀ 変更点を差分表示
+
+git stash 現在の変更点を一時的に保存
